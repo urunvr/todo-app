@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .montserrat-400 {
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .mt-6 {
+      margin-top: 6px;
+    }
+
+    .mt-10 {
+      margin-top: 10px;
+    }
+
+    .container-full {
+      width: 75%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      margin: auto;
+    }
+
+
+
+
+    .content-box {
+      margin-top: 80px;
+      max-height: 50%;
+      height: 359px;
+      width: 370px;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      border: 1px solid #EEEEEE;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 1);
+
+      box-shadow: 0px 8px 15px 0px rgba(20, 20, 20, 0.12), 0px 0px 4px 0px rgba(20, 20, 20, 0.1);
+
+
+    }
+
+    .input-box {
+      width: 370px;
+      gap: 0px;
+      opacity: 0px;
+      cursor: pointer;
+    }
+
+    .inbut-box-inner {
+      padding: 8px 15px 8px 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .input-title {
+      font-size: 13px;
+      line-height: 18.2px;
+      font-weight: 400;
+      color: rgba(31, 33, 40, 1);
+      cursor: pointer;
+    }
+
+    .line-seperator {
+      width: 100%;
+      top: 85px;
+      left: 104px;
+      padding: 10px 0px 10px 0px;
+      gap: 0px;
+      border-radius: 6px 0px 0px 0px;
+      border: 1px 0px 0px 0px solid;
+      border-color: rgba(238, 238, 238, 1);
+    }
+
+    hr.solid {
+      width: 93%;
+      border: 0.7px solid rgba(205, 205, 205, 1);
+    }
+
+    .button {
+      background: rgba(255, 206, 34, 1);
+      color: rgba(31, 33, 40, 1);
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      width: 340px;
+      height: 40px;
+      padding: 10px 20px 10px 20px;
+      gap: 10px;
+      border-radius: 4px;
+      border: 1px solid transparent;
+      opacity: 0px;
+    }
+
+    .button-part {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+
+    input[type=checkbox] {
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      -o-appearance: none;
+      outline: none;
+      content: "";
+      width: 23px;
+      height: 23px;
+      top: 6.5px;
+      left: 6px;
+      font-size: 1.3em;
+      border: 1px solid rgba(189, 189, 189, 1);
+      border-radius: 6px;
+      opacity: 0px;
+      cursor: pointer;
+      background: rgba(255, 255, 255, 1);
+      padding: 0 2px;
+      overflow: hidden;
+
+    }
+
+
+    input[type=checkbox]:checked {
+      background: rgba(36, 105, 246, 1);
+      outline: none;
+      border: 1px solid rgba(50, 125, 255, 1);
+
+    }
+
+    input[type='checkbox']:checked:after {
+      content: '\2713';
+      color: white;
+    }
+
+
+
+
+    /* input[type="checkbox"] {
+      width: 23px;
+      height: 23px;
+      top: 6.5px;
+      left: 6px;
+      gap: 0px;
+      border: 0.25rem solid green;
+      border-radius: 6px;
+      opacity: 0px;
+
+
+
+
+      /* appearance: none;
+      -webkit-appearance: none;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      font-size: 2rem;
+      padding: 0.1rem;
+      border: 0.25rem solid green;
+      border-radius: 1; */
+    }
+
+    */
+  </style>
+</head>
+
+<body>
+
+  <div class="container-full">
+
+    <div class="content-box">
+
+      <div class="input-box mt-6">
+        <div class="inbut-box-inner">
+          <label class="input-title montserrat-400" for="page-all-checkbox">All pages</label>
+          <div class="input-checkbox">
+            <input type="checkbox" name="page-all-checkbox" id="page-all-checkbox">
+          </div>
+
+        </div>
+      </div>
+
+      <hr class="solid">
+
+      <div class="input-box">
+        <div class="inbut-box-inner">
+          <label class="input-title montserrat-400" for="page-1-checkbox">Page 1</label>
+          <div class="input-checkbox">
+            <input type="checkbox" name="page-1-checkbox" id="page-1-checkbox">
+          </div>
+        </div>
+      </div>
+
+      <div class="input-box">
+        <div class="inbut-box-inner">
+          <label class="input-title montserrat-400" for="page-2-checkbox">Page 2</label>
+          <div class="input-checkbox">
+            <input type="checkbox" name="page-2-checkbox" id="page-2-checkbox">
+          </div>
+        </div>
+      </div>
+
+      <div class="input-box">
+        <div class="inbut-box-inner">
+          <label class="input-title montserrat-400" for="page-3-checkbox">Page 3</label>
+          <div class="input-checkbox">
+            <input type="checkbox" name="page-3-checkbox" id="page-3-checkbox">
+          </div>
+        </div>
+      </div>
+
+      <div class="input-box">
+        <div class="inbut-box-inner">
+          <label class="input-title montserrat-400" for="page-4-checkbox">Page 4</label>
+          <div class="input-checkbox">
+            <input type="checkbox" name="page-4-checkbox" id="page-4-checkbox">
+          </div>
+        </div>
+      </div>
+
+      <hr class="solid">
+
+      <div class="input-box mt-10">
+        <div class="montserrat-400 button-part">
+          <button class="button">Done</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>
